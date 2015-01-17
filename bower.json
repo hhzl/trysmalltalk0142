@@ -1,37 +1,38 @@
 {
-    "name": "trysmalltalk",
-    "description": "Tutorial to learn Smalltalk",
-    "version": "0.1.0",
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "/*.js",
-        "/*.html",
-        "test",
-        "tests"
-    ],
-    "authors": [
-        {
-            "name": "hhzl",
-            "email": "hannes.hirzel@gmail.com"
-        }
-    ],
-    "homepage": "https://github.com/hhzl/trysmalltalk0142",
-    "keywords": [
-        "Amber",
-        "Smalltalk"
-    ],
-    "license": [
-        "MIT"
-    ],
-    "private": false,
-    "dependencies": {
-        "amber": "^0.14.1"
-    },
-    "devDependencies": {
-        "amber-ide-starter-dialog": "^0.1.0",
-        "amber-attic": "^0.1.0",
-        "helios": "^0.3.0"
+  "name": "trysmalltalk",
+  "description": "Tutorial to learn Smalltalk",
+  "version": "0.1.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "/*.js",
+    "/*.html",
+    "test",
+    "tests"
+  ],
+  "authors": [
+    {
+      "name": "hhzl",
+      "email": "hannes.hirzel@gmail.com"
     }
+  ],
+  "homepage": "https://github.com/hhzl/trysmalltalk0142",
+  "keywords": [
+    "Amber",
+    "Smalltalk"
+  ],
+  "license": [
+    "MIT"
+  ],
+  "private": false,
+  "dependencies": {
+    "amber": "^0.14.1",
+    "amber-attic": "~0.1.2"
+  },
+  "devDependencies": {
+    "amber-ide-starter-dialog": "^0.1.0",
+    "amber-attic": "^0.1.0",
+    "helios": "^0.3.0"
+  }
 }
