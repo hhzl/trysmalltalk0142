@@ -1,37 +1,4 @@
 Smalltalk createPackage: 'TrySmalltalk'!
-Object subclass: #TrySmalltalk
-	instanceVariableNames: ''
-	package: 'TrySmalltalk'!
-
-!TrySmalltalk methodsFor: 'action'!
-
-doAmberWith
-	| tag |
-	tag := (HTMLCanvas onJQuery: '#output-list' asJQuery) root.
-	tag with: [ :html | html li with: 'Amber Web #with: added me!!' ]
-!
-
-doJQueryAppend
-	'#output-list' asJQuery append: '<li>jQuery append added me!!</li>'
-! !
-
-!TrySmalltalk methodsFor: 'starting'!
-
-augmentPage
-	'#amber-with' asJQuery click: [ self doAmberWith ].
-	'#jquery-append' asJQuery click: [ self doJQueryAppend ].
-        TrySmalltalkWidget new appendToJQuery: 'body' asJQuery.
-! !
-
-!TrySmalltalk class methodsFor: 'starting'!
-
-start
-	self new augmentPage
-! !
-
-
-
-Smalltalk createPackage: 'TrySmalltalk'!
 Object subclass: #AbstractTutorial
 	instanceVariableNames: ''
 	package: 'TrySmalltalk'!
@@ -874,7 +841,6 @@ first
 
 go
 	self first.
-
 !
 
 next
@@ -883,6 +849,36 @@ next
 
 previous
 	^ self default previous.
+! !
+
+Object subclass: #TrySmalltalk
+	instanceVariableNames: ''
+	package: 'TrySmalltalk'!
+
+!TrySmalltalk methodsFor: 'action'!
+
+doAmberWith
+	| tag |
+	tag := (HTMLCanvas onJQuery: '#output-list' asJQuery) root.
+	tag with: [ :html | html li with: 'Amber Web #with: added me!!' ]
+!
+
+doJQueryAppend
+	'#output-list' asJQuery append: '<li>jQuery append added me!!</li>'
+! !
+
+!TrySmalltalk methodsFor: 'starting'!
+
+augmentPage
+	'#amber-with' asJQuery click: [ self doAmberWith ].
+	'#jquery-append' asJQuery click: [ self doJQueryAppend ].
+	TrySmalltalkWidget new appendToJQuery: 'body' asJQuery.
+! !
+
+!TrySmalltalk class methodsFor: 'starting'!
+
+start
+	self new augmentPage
 ! !
 
 Widget subclass: #TrySmalltalkWidget

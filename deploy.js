@@ -1,5 +1,6 @@
 define([
-    'amber/deploy',
+    // 'amber/deploy',
+    'amber/lang',
     // --- packages to be deployed begin here ---
     'amber-attic/IDE',
     'amber-trysmalltalk/TrySmalltalk'
